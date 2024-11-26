@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Einstellungen"
+        android:textColor="@color/dunkelblau"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audio"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxAudio"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxVideo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dialog"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSprechen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sprechen"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDialog"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp" />
+
+
+    <CheckBox
+        android:id="@+id/checkBoxReisen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="88dp"
+        android:text="Reisen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSprechen" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBuero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="Büro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxReisen" />
+
+    <CheckBox
+        android:id="@+id/checkBoxKonversation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Konversation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxBuero" />
+
+    <!-- Beispielhafte Layout-Ergänzung -->
+
+    <Spinner
+        android:id="@+id/spinnerStartLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/level_options"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="528dp" />
+
+    <Button
+        android:id="@+id/buttonSaveSettings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="296dp"
+        android:background="@drawable/rounded_button_background"
+        android:padding="15dp"
+        android:text="Einstellungen speichern"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSprechen"
+        app:layout_constraintWidth_percent="0.7" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="42dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        app:srcCompat="@drawable/bar_chart" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Statistik"
+        android:textColor="@color/dunkelblau"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="402dp"
+        android:layout_height="483dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.337">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/muttersprache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Muttersprache: Deutsch"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/zielsprache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zielsprache: Englisch"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/behandelteLektionen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="behandelte Lektionen: 0"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/ungelerntePhrasen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ungelernte Phrasen: 0"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/eineWdh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1x wiederholt: 0"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/zweiWdh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2x wiederholt: 0"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/dreiWdh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3x wiederholt: 0"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/vierWdh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4x wiederholt: 0"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/gelerntePhrasen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gelernte Phrasen: 0"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/favorit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favoriten: 0"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <Button
+        android:id="@+id/lektionen"
+        android:layout_width="57dp"
+        android:layout_height="64dp"
+        android:background="@drawable/book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/training"
+        android:layout_width="54dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rocket"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/statistik"
+        android:layout_width="54dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bar_chart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/lexikon"
+        android:layout_width="54dp"
+        android:layout_height="60dp"
+        android:background="@drawable/lexikon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/homebtn"
+        android:layout_width="58dp"
+        android:layout_height="63dp"
+        android:background="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

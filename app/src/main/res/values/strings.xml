@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Dailingua</string>
+
+    <string-array name="sprachen_array">
+        <item>Deutsch</item>
+        <item>Englisch</item>
+        <item>Spanisch</item>
+    </string-array>
+
+    <string-array name="stage_options">
+        <item>Stufe 1</item>
+        <item>Stufe 2</item>
+        <item>Stufe 3</item>
+        <item>Stufe 4</item>
+    </string-array>
+
+</resources>
